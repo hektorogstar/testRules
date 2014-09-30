@@ -1,5 +1,5 @@
 {
   "name": "junkMail",
-  "rule": "",
+  "rule": "return [['ccfield':'ccfields', \n\t\t 'bccfield':'bccfields', \n\t\t 'fromAddr': 'sender', \n\t\t 'recipient': 'recipient', \n\t\t 'subject': 'subject',\n\t\ttemplate:\n\t\tmergeData: ]]\n",
   "class": "edu.usf.RuleChains.Groovy"
 }
