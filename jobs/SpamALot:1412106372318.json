@@ -3,7 +3,7 @@
   "name": "SpamALot:1412106372318",
   "triggers": 
   [
-    "0 23 * * * ? 2014"
+    "0 26 * * * ? 2014"
   ],
   "chain": "SpamALot",
   "input": 
