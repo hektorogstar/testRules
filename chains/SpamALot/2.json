@@ -3,7 +3,7 @@
   "sourceName": "staging",
   "inputReorder": "",
   "outputReorder": "",
-  "executeEnum": "NORMAL",
+  "executeEnum": "EXECUTE_USING_ROW",
   "resultEnum": "NONE",
   "linkEnum": "NONE",
   "rule": "eCore2",
