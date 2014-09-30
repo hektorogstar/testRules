@@ -1,5 +1,5 @@
 {
   "name": "eCore2",
-  "rule": "def templateEngine = new GStringTemplateEngine()\n\ndef mapping = ['ccfield':'ccfields', 'bccfield':'bccfields', 'fromAddr': 'sender', 'recipient': 'recipient', 'subject': 'subject' ]\ndef config = (ConfigObject) row.inject( ['recipientHdr': 'email', 'mail.smtp.host': 'bumblebee.forest.usf.edu'] ) { map, k, v -> \n\tif( k in mapping.keySet()) {\n\t\tif (v) map[ mapping[ k ] ?: k ] = v ; \n\t}\n\treturn map \n}\nprintln config\t\ndef emailText = templateEngine.createTemplate(row['templateText']).make(row['templateData']).toString()\nsendEmail(config,emailText)",
+  "rule": "def templateEngine = new GStringTemplateEngine()\n\ndef mapping = ['ccfield':'ccfields', 'bccfield':'bccfields', 'sender': 'fromAddr', 'recipient': 'recipient', 'subject': 'subject' ]\ndef config = (ConfigObject) row.inject( ['recipientHdr': 'email', 'mail.smtp.host': 'bumblebee.forest.usf.edu'] ) { map, k, v -> \n\tif( k in mapping.keySet()) {\n\t\tif (v) map[ mapping[ k ] ?: k ] = v ; \n\t}\n\treturn map \n}\nprintln config\t\ndef emailText = templateEngine.createTemplate(row['templateText']).make(row['templateData']).toString()\nsendEmail(config,emailText)",
   "class": "edu.usf.RuleChains.Groovy"
 }
