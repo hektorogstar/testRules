@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 2,
+  "sourceName": "staging",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "NONE",
+  "linkEnum": "NONE",
+  "rule": "eCore2",
+  "class": "edu.usf.RuleChains.Link"
+}
