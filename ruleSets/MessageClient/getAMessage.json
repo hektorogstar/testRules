@@ -1,0 +1,5 @@
+{
+  "name": "getAMessage",
+  "rule": "import edu.usf.MessageService.MessageServiceClient\n\ndef client = new MessageServiceClient(rcGlobals.msgClientHost)\n\nclient.setCredentials(rcGlobals.msgClientUsername,rcGlobals.msgClientPassword)\n// client.setKeyStoreLocation('/tmp/keystore.jks', '123abc')\nclient.trustAllCerts()\nclient.setQueueFileLocation('/tmp')\n\ndef messages = client.getTopicMessages(rcGlobals.msgClientQueue)\n\naMessage = messages.first().toString()\n\nsqls.staging.execute(\"insert into resultable(resultcolumn) values(${aMessage})\")",
+  "class": "edu.usf.RuleChains.Groovy"
+}

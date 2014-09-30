@@ -1,0 +1,5 @@
+{
+  "name": "intermediaryGroovy",
+  "rule": "row.each() {\n\tsql.execute(\"insert into resultable(resultcolumn) values(${it})\")\n}\n\treturn row",
+  "class": "edu.usf.RuleChains.Groovy"
+}

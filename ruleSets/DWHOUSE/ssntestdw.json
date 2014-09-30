@@ -1,0 +1,5 @@
+{
+  "name": "ssntestdw",
+  "rule": "sqls.dwhouse.withBatch(1000, \"\"\"\nINSERT INTO cimspr_idr_stg (\n  identity_id,\n  id_type_id,\n  id_source_id,\n  id,\n  id_lastupddttm,\n  id_type_name,\n  id_source_name\n) VALUES ( :identity_id, :id_type_id, :id_source_id, :id, :id_lastupddttm, :id_type_name, :id_source_name )\n\"\"\") { ps ->\n\tsqls.cimspr.eachRow(\"\"\"SELECT  identity_id AS identity_id,  identifier_type_id AS id_type_id,  source_id AS id_source_id\n,     SUBSTR(SHA1(CONCAT(identifier,'EXTRA STRING')),1,255) as id\n,     date(merge_date) AS id_lastupddttm\n,     'HASHED_SSN' as id_type_name\n,     'manual' as id_source_name\nFROM idr_identifiers     WHERE       identity_id=51051 AND       identifier_type_id=1 AND       source_id=1\n\"\"\") { r ->\n\t\tps.addBatch(r)\n\t}\t\n}\n//\t\tps.addBatch(r.identity_id as Integer,r.id_type_id as Integer,r.id_source_id as Integer,r.id,r.id_lastupddttm,r.id_type_name as String,r.id_source_name as String)\n",
+  "class": "edu.usf.RuleChains.Groovy"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "dwhouseInsert",
+  "rule": "INSERT INTO cimspr_idr_stg (\n  identity_id,\n  id_type_id,\n  id_source_id,\n  id,\n  id_lastupddttm,\n  id_type_name,\n  id_source_name\n) VALUES ( ?, ?, ?, ?, ?, ?, ? )",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

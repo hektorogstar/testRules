@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 2,
+  "sourceName": "nams",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "RECORDSET",
+  "linkEnum": "LOOP",
+  "rule": "getSponsorEmail",
+  "class": "edu.usf.RuleChains.Link"
+}

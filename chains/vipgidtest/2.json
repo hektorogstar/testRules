@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 2,
+  "sourceName": "staging",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "EXECUTE_USING_ROW",
+  "resultEnum": "UPDATE",
+  "linkEnum": "ENDLOOP",
+  "rule": "n2Resultable",
+  "class": "edu.usf.RuleChains.Link"
+}

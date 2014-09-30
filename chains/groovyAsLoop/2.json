@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 2,
+  "sourceName": "staging",
+  "inputReorder": "//return [\n//\tmyKey: row.messageData.allowWIREDaccess.toString()\n//]\nreturn row.messageData.inject([:]){ r,o  ->\n\tswitch(o.key) {\n\t\tcase \"password\":\n\t\t\tr[\"myKey\"] = o.value\n\t\t\treturn r\n\t\t\tbreak\n\t\tdefault:\n\t\t\treturn r\n\t}\n}",
+  "outputReorder": "",
+  "executeEnum": "EXECUTE_USING_ROW",
+  "resultEnum": "UPDATE",
+  "linkEnum": "ENDLOOP",
+  "rule": "n2Resultable",
+  "class": "edu.usf.RuleChains.Link"
+}

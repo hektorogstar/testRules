@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 5,
+  "sourceName": "dwhouse",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "NONE",
+  "linkEnum": "NONE",
+  "rule": "pr2dwSsn",
+  "class": "edu.usf.RuleChains.Link"
+}

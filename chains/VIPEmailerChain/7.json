@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 7,
+  "sourceName": "staging",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "EXECUTE_USING_ROW",
+  "resultEnum": "NONE",
+  "linkEnum": "NONE",
+  "rule": "EmailerCore",
+  "class": "edu.usf.RuleChains.Link"
+}

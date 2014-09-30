@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 5,
+  "sourceName": "cimspr",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "EXECUTE_USING_ROW",
+  "resultEnum": "APPENDTOROW",
+  "linkEnum": "NONE",
+  "rule": "emailerDataQuery",
+  "class": "edu.usf.RuleChains.Link"
+}

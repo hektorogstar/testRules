@@ -1,0 +1,5 @@
+{
+  "name": "DummyRule",
+  "rule": "select null from dual",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

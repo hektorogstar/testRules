@@ -1,0 +1,5 @@
+{
+  "name": "insertNote",
+  "rule": "insert into notes (note_type, note_value, badge, badge_scribe, note) values (:noteType, :noteValue, :badge, :badge_scribe, :note)",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

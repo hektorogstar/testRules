@@ -1,0 +1,14 @@
+{
+  "group": "DEFAULT",
+  "name": "groovyAsLoop:1404155733504",
+  "triggers": 
+  [
+    "0 2 * * * ? 2016"
+  ],
+  "chain": "groovyAsLoop",
+  "input": 
+  [
+    {
+    }
+  ]
+}

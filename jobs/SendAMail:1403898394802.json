@@ -1,0 +1,14 @@
+{
+  "group": "DEFAULT",
+  "name": "SendAMail:1403898394802",
+  "triggers": 
+  [
+    "0 50 * * * ? 2016"
+  ],
+  "chain": "SendAMail",
+  "input": 
+  [
+    {
+    }
+  ]
+}

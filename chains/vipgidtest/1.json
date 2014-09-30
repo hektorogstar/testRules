@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 1,
+  "sourceName": "nams",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "RECORDSET",
+  "linkEnum": "LOOP",
+  "rule": "VIP-Complete-Group-List",
+  "class": "edu.usf.RuleChains.Link"
+}

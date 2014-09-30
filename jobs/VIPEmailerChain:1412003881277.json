@@ -1,0 +1,14 @@
+{
+  "group": "DEFAULT",
+  "name": "VIPEmailerChain:1412003881277",
+  "triggers": 
+  [
+    "0 3 * * * ? 2016"
+  ],
+  "chain": "VIPEmailerChain",
+  "input": 
+  [
+    {
+    }
+  ]
+}

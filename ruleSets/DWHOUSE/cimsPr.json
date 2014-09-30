@@ -1,0 +1,5 @@
+{
+  "name": "cimsPr",
+  "rule": "SELECT x.identity_id, x.id_type_id, x.id_source_id\n, CASE WHEN MIN(x.id) <> MAX(x.id) THEN CONCAT('(MULTIPLE: Has ',COUNT(DISTINCT x.id),' of them)') ELSE MIN(x.id) END\n, MIN(lastupddttm)\n, MIN(id_type_name)\n, MIN(id_source_name)\nFROM (\n\tSELECT DISTINCT\n\ti.identity_id\n\t, i.identifier_type_id as id_type_id\n\t, i.source_id as id_source_id\n\t, SUBSTR(i.identifier,1,255) as id\n\t, i.merge_date as lastupddttm\n\t, SUBSTR(itype.identifier_name,1,100) as id_type_name\n\t, SUBSTR(isrc.name,1,128) as id_source_name\n\tFROM idr_identifiers i\n\tJOIN ctd_identifier_types itype on itype.identifier_type_id = i.identifier_type_id\n\tJOIN ctd_sources isrc on isrc.source_id = i.source_id\n\tWHERE i.identity_id > 3\n\tAND i.status = 'Active'\n\tAND i.identifier_type_id NOT IN ( 1, 2, 4, 10, 11 )\n) x\nGROUP BY x.identity_id, x.id_type_id, x.id_source_id",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

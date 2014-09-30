@@ -1,0 +1,14 @@
+{
+  "group": "DEFAULT",
+  "name": "msgClientTest:1404152732908",
+  "triggers": 
+  [
+    "0 4 * * * ? 2019"
+  ],
+  "chain": "msgClientTest",
+  "input": 
+  [
+    {
+    }
+  ]
+}

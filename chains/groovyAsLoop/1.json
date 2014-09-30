@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 1,
+  "sourceName": "staging",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "RECORDSET",
+  "linkEnum": "LOOP",
+  "rule": "getMessages",
+  "class": "edu.usf.RuleChains.Link"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "VIP-Complete-Group-List",
+  "rule": "select * from vip_group",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

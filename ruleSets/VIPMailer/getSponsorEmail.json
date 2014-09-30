@@ -1,0 +1,5 @@
+{
+  "name": "getSponsorEmail",
+  "rule": "select * from vip_group_member where gid = 207 and function='S' and vipid != 1015700",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

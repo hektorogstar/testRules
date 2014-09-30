@@ -1,0 +1,5 @@
+{
+  "name": "n2Resultable",
+  "rule": "insert into resultable(resultcolumn) values(concat(:gid,:description))",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

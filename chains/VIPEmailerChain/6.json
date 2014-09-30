@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 6,
+  "sourceName": "staging",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "EXECUTE_USING_ROW",
+  "resultEnum": "RECORDSET",
+  "linkEnum": "LOOP",
+  "rule": "EmailerFinalConfig",
+  "class": "edu.usf.RuleChains.Link"
+}

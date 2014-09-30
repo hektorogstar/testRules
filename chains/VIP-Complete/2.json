@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 2,
+  "sourceName": "cimspr",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "NONE",
+  "linkEnum": "NONE",
+  "rule": "VIP-15days",
+  "class": "edu.usf.RuleChains.Link"
+}

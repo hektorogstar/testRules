@@ -1,0 +1,5 @@
+{
+  "name": "getMessages",
+  "rule": "import edu.usf.MessageService.MessageServiceClient\n\ndef client = new MessageServiceClient(rcGlobals.msgClientHost)\n\nclient.setCredentials(rcGlobals.msgClientUsername,rcGlobals.msgClientPassword)\n// client.setKeyStoreLocation('/tmp/keystore.jks', '123abc')\nclient.trustAllCerts()\nclient.setQueueFileLocation('/tmp')\n\n//def messages = client.getTopicMessages(rcGlobals.msgClientQueue)\nreturn client.getTopicMessages(rcGlobals.msgClientQueue)[0..2]\n//aMessage = [:]\n//n=0\n// messages.each() { aMessage += [\"a\" + n++ : it.flatten().toString()] }[0..3]\n\n//return [aMessage]",
+  "class": "edu.usf.RuleChains.Groovy"
+}

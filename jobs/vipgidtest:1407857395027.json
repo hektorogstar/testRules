@@ -1,0 +1,14 @@
+{
+  "group": "DEFAULT",
+  "name": "vipgidtest:1407857395027",
+  "triggers": 
+  [
+    "0 54 * * * ? 2016"
+  ],
+  "chain": "vipgidtest",
+  "input": 
+  [
+    {
+    }
+  ]
+}

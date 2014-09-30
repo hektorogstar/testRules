@@ -1,0 +1,5 @@
+{
+  "name": "SendEmail",
+  "rule": "import edu.usf.cims.emailer.EmailerEngine\n\ndef maileng = new EmailerEngine()\ndef config = new ConfigObject()\n\nconfig.put('fromAddr', 'testmailer@rules-pro-1.it.usf.edu')\nconfig.put('recipient', 'chance@mail.usf.edu')\nconfig.put('subject', 'A test mail from RuleChains')\nconfig.put('mail.smtp.host','bumblebee.forest.usf.edu')\nmailtext=\"\"\"pr2dw chain complete<br>\nEnjoy!<br>\nBTW, added this line after the rulechain started to see what happens.\n\"\"\"\nmaileng.sendEmail(config,mailtext)",
+  "class": "edu.usf.RuleChains.Groovy"
+}

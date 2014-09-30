@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 5,
+  "sourceName": "cimspr",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "APPENDTOROW",
+  "linkEnum": "NONE",
+  "rule": "mergeDataQuery",
+  "class": "edu.usf.RuleChains.Link"
+}

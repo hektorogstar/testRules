@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 3,
+  "sourceName": "cimspr",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "APPENDTOROW",
+  "linkEnum": "NONE",
+  "rule": "vipWarningTemplate",
+  "class": "edu.usf.RuleChains.Link"
+}

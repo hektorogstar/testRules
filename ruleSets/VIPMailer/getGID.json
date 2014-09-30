@@ -1,0 +1,5 @@
+{
+  "name": "getGID",
+  "rule": "select * from vip_group where gid=207",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

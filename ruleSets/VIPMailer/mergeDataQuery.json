@@ -1,0 +1,5 @@
+{
+  "name": "mergeDataQuery",
+  "rule": "def gid = row['gid']\ndef sponsorId = row['vipid']\n\nreturn [ [mergeDataQuery: \"\"\"select \ngmv.gid AS gid,\ngmv.fname AS fname,\ngmv.lname AS lname,\ngmv.created_vipid AS created_vipid,\ngmv.created_dt AS created_dt,\ndate(gmv.expiration_dt) AS expiration_dt,\ngmv.email AS email\nfrom \n\t(select vgm.gid,vgm.vipid,n.fname,n.lname,vgm.created_vipid,vgm.created_dt,vgm.expiration_dt,n.maildrop AS email\n\t from \n\t vip_group_member vgm LEFT JOIN \n\t names n on (n.badge=vgm.vipid)  \n\t UNION \n\t select gm.gid,gm.vipid,v.fname,v.lname,gm.created_vipid,gm.created_dt,gm.expiration_dt,v.email AS email\n\t from \n\t vip_group_member gm LEFT JOIN \n\t vip v ON (v.vipid=gm.vipid) \n\t WHERE (v.fname IS NOT NULL and v.lname IS NOT NULL)\n\t) gmv LEFT JOIN\n\tvip_group g ON (g.gid=gmv.gid)\n\tWHERE\ng.gid = ${gid}\nand gmv.created_vipid=${sponsorId}\"\"\"]]",
+  "class": "edu.usf.RuleChains.Groovy"
+}

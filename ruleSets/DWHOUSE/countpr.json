@@ -1,0 +1,5 @@
+{
+  "name": "countpr",
+  "rule": "select count(*) from cimspr_idr_stg",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}
