@@ -1,5 +1,5 @@
 {
   "name": "junkMail",
-  "rule": "return [['ccfield':'', \n\t\t 'bccfield':'', \n\t\t 'fromAddr': 'chance@mail.usf.edu', \n\t\t 'recipient': 'chance@mail.usf.edu', \n\t\t 'subject': 'Blah Friggin Blah',\n\t\ttemplateText: \"\"\"blah blah\n\nblah blah\"\"\",\n\t\t \n\t\ttemplateData: [salutation: 'Hey There'] ]]\n",
+  "rule": "return [['ccfield':'', \n\t\t 'bccfield':'', \n\t\t 'sender': 'chance@mail.usf.edu', \n\t\t 'recipient': 'chance@mail.usf.edu', \n\t\t 'subject': 'Blah Friggin Blah',\n\t\ttemplateText: \"\"\"blah blah\n\nblah blah\"\"\",\n\t\t \n\t\ttemplateData: [salutation: 'Hey There'] ]]\n",
   "class": "edu.usf.RuleChains.Groovy"
 }
